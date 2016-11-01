@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 from os import listdir
 from os.path import isfile, join
 import json, string, io, os, sys
@@ -6,7 +8,7 @@ cwd = os.getcwd()
 print "Please specify the infrastructure name after the script name. \n For example: aws, google, azure, openstack, vsphere, etc. \n"
 
 infra_name = str(sys.argv[1])
-  
+
 def extract_keys(d,n):
     retval = {}
     if n != "":
